@@ -4,33 +4,53 @@
     ViewData["Title"] = "Taxation API";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Taxation API - an API for getting tax data</h1>
-    <p>Welcome! With this API, you're able to integrate all sorts of taxation data into your application.</p>
+<div class="container p-4 bg-light">
+    <div class="text-center">
+        <h1 class="display-4">Taxation API - an API for getting tax data</h1>
+        <p>With this API, you're able to integrate all sorts of taxation data into your application.</p>
+        <a href="https://api.taxationapi.com/" class="btn btn-success">Go to the API</a>
+    </div>
 </div>
+
 <br />
 <div class="container">
-    <h2>What can I use the API for?</h2>
-    <p> You can use the API to collect the following data about each country:</p>
+    <h2>What can I use this taxation API for?</h2>
+    <p>This is a free-to-use API you can use to find information about tax in a country. We're collecting publically available tax information, and adding them to our API. The project is open source, and you can make contributions (both data but also adding more features).</p>
+    <p>We currently support the following types of taxes:</p>
     <ul>
-        <li>Income tax (and the brackets)</li>
-        <li>Capital gains tax</li>
-        <li>Corporate tax</li>
-        <li>Wealth tax</li>
-        <li>Lump sum</li>
+        <li><b>Income tax</b>:<br/>Calculating the tax you're paying in normal (and foreign) income</li>
+        <li><b>Capital gains tax</b>:<br/>Calculating the tax you're paying when selling investements (stocks, bonds) </li>
+        <li><b>Corporate tax</b>:<br />Calculating the tax you're paying on profits in a corporation</li>
+        <li><b>Wealth tax</b>:<br/>Calculating the total wealth tax for the few countries that has a tax on total wealth</li>
+        <li><b>Lump sum tax</b>:<br/>If a lump sump can be paid to have a fixed monetary amount of tax instead of a percentage, this is included as well</li>
     </ul>
 
     <p>That means you can use the API for any kind of application, where you need data about taxation.</p>
 
-    <h2>Calculating effective taxation</h2>
-    <p>The API can also be used to calculate effective tax. The API supports you can provide a range of inputs (i.e. yearly income, capital gains and corporate profits) and then it calculates the actual profit depending on the country you live in.</p>
-
-    <h2>More details</h2>
+    <h2>More information about how we handle each of the tax types:</h2>
+    <p>Click the link below to get more information:</p>
     <ul>
         <li><a href="/IncomeTax">Income tax API</a></li>
         <li><a href="/CorporateTax">Corporate tax API</a></li>
         <li><a href="/CapitalGainsTax">Capital gains tax API</a></li>
         <li><a href="/WealthTax">Wealth tax API</a></li>
         <li><a href="/Lumpsum">Lumpsum tax API</a></li>
+    </ul>
+    
+    <h2>Calculating effective tax</h2>
+    <p>On multiple websites you can find a table with tax-rates in each country. This is not very useful for the following reasons:</p>
+    <ul>
+        <li>The data is often wrong</li>
+        <li>Most tax is complicated, and is calculated with brackets (i.e. lower amounts gives lower taxes), types (i.e. some type of income has unique taxes)</li>
+        <li>You cannot only look at income tax and corporate tax (the two main ones listed online). You need to understand the rest too</li>
+    </ul>
+    <p>With this API, we're collecting all the publically available information in an API everyone can use. We hope that people will help contribute to the API by making pull requests and over time add even more data.</p>
+    
+    <h2>How is tax data maintained</h2>
+    <p>The data has been collected by:</p>
+    <ul>
+        <li>First version was gathered by a virtual assistant covering at least two sources</li>
+        <li>The data has been been compared with multiple "income tax in X" lists and similar, and each difference has been investigated manually</li>
+        <li>We're updating data each time someone reports it</li>
     </ul>
 </div>

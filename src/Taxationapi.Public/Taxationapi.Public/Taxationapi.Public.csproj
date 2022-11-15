@@ -10,4 +10,8 @@
     <Content Remove="Pages\Contact - Copy.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.0" />
+  </ItemGroup>
+
 </Project>

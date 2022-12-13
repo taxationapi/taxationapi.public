@@ -4,19 +4,19 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P82HN7H5HE"></script>
     <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-P82HN7H5HE');
-</script>
-    
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        gtag('config', 'G-P82HN7H5HE');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Taxation API</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/Taxationapi.Public.styles.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Taxationapi.Public.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
@@ -29,7 +29,9 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                       
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/ComputeAPI">Calculate tax</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/About">FAQ</a>
                         </li>
@@ -37,7 +39,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a target="_blank"  href="https://github.com/taxationapi/taxationapi.web" class="nav-link text-dark">Source code</a>
+                            <a target="_blank" href="https://github.com/taxationapi/taxationapi.web" class="nav-link text-dark">Source code</a>
                         </li>
                         <li class="nav-item">
                             <a target="_blank" class="nav-link text-dark" href="https://api.taxationapi.com" style="font-weight: bold">Go to API</a>
@@ -53,10 +55,11 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
+<br>
+<br>
+<footer class="border-top footer text-muted">
         <div class="container">
-            Taxation API<br/>
+            Taxation API<br />
             <a href="/IncomeTax">Income tax API</a> | <a href="/CapitalGainsTax">Capital gains tax API</a> | <a href="/CorporateTax">Corporate tax API</a> | <a href="/WealthTax">Wealth tax API</a> | <a href="/Lumpsum">Lumpsum tax API</a>
         </div>
     </footer>

@@ -1,0 +1,36 @@
+﻿@page
+@{
+    ViewData["Title"] = "Capital gains tax API";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Calculating someones total income after taxes using our taxation API
+    </h1>
+
+    <p>If you have an application where you want to show how a persons economy would look after taxes, depending on the country they live, you’ve come to the right place.</p>
+</div>
+
+
+
+<p>With our open-source API, you’re able to calculate how the taxation looks for all individuals. The way the API works is you have multiple endpoints. The core endpoint is the tax-rates endpoint, where you can get all the different taxation rates for a country.</p>
+<p>
+    However, we also have our computation API, where you can enter information about an individuals economy. You can enter:</p>
+<ul>
+    <li>The yearly salary</li>
+    <li>The yearly corporate profit from their company (that they share a part of)</li>
+    <li>The yearly capital gains profits</li>
+    <li>The total networth</li>
+
+</ul>
+
+<p>With these values the API is able to calculate how much that the individual would end up paying depending on where the person would live.</p>
+<h2>Use-cases for the API</h2>
+<p>The API can be used in all ways you wish. Since it’s open source you can use it directly, or simply clone the repository and use it in any way.</p>
+<p>Some ideas for the use-case:<ul>
+        <li>A website where all taxation can be listed</li>
+        <li>
+            A website where individuals can research each country to get inspiration
+        </li>
+    </ul>
+
+</p>
